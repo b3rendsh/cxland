@@ -21,7 +21,7 @@ MSX 1 system on a rcbus computer:
 
 ## License
 
-The Creative Commons license terms applies to all material in this repository.
-
+The Creative Commons license terms applies to all material in this repository with following exceptions.  
+MSX-DOS binaries are copyrighted by ASCII and their license terms and/or intentions are respected.  
 For the RomWBW modifications the GNU AFFERO GENERAL PUBLIC LICENSE applies, a copy of the terms is in the RomWBW351 folder.
 

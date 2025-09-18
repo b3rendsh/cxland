@@ -18,15 +18,32 @@ The same license terms apply as the original distribution of RomWBW. The modifie
 
 Official distribution of RomWBW: https://github.com/wwarthen/RomWBW
 
-## Installation/usage
+## Installation/usage on real MSX
 
 The easiest way to get started with RomWBW for MSX is to use the prebuilt disk image and/or ROM file.
 1. Flash the msx_combo_256MB.dsk image to a 256MB or higher capacity storage card.
 2. Boot your MSX 2 with this storage card on a supported disk system.
 3. Run "rcmsx2" in the 8MB MSX FAT12 boot partition.  
 
-Note: if you don't have a supported disk system then you can still load RomWBW but you will only have
-access to the built-in ROM applications and ramdisk.
+Notes:  
+1: If you don't have a supported disk system then you can still load RomWBW but you will only have
+access to the built-in ROM applications and ramdisk.  
+2: RomWBW uses the Omega keyboard driver with US international keyboard layout, using other keyboard layouts may cause incorrect key mapping.
+
+## openMSX emulator usage
+
+RomWBW can be used in openMSX 20.0 (or newer) with the following machine configuration.  
+Make sure you have the required system roms installed (google systemroms for openMSX).  
+1. Select the Philips NMS8255 machine (MSX 2 with international keyboard layout).
+2. Insert openMSX Team Memory Mapper (512KB) extension in cart Slot A.
+3. Insert SOLiD BEER IDE extension in cart Slot B.
+4. For Disk Drive A select the msx_fd_720KB.dsk image.
+5. For Hard Disk A select the msx_combo_256MB.dsk image.
+6. Boot the machine.  
+
+Notes:  
+1: If you use the latest BEER ROM (github msxdos2s) then you can boot from the hard disk and step 4 is not required.  
+2: You can boot more CP/M work-alike systems then are displayed in the boot menu e.g. CP/M 3. See RomWBW user manual.
 
 ## Custom installation/configuration
 
