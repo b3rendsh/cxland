@@ -11,8 +11,9 @@ https://github.com/b3rendsh/cvload
 ## MSX
 
 Modified RomWBW for CP/M (and work-alike) operating systems on a MSX computer:  
-[Source code modifications](msx/RomWBW351)  
-[Binaries](msx/msx351)
+[Source code modifications and instructions](msx/RomWBW351)  
+[Binaries](msx/msx351)  
+The modified sources are provided so they can be validated. These files will be archived/removed when the change is implemented in the official distribution of RomWBW.
 
 ## Retro computer
 
