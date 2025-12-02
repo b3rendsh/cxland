@@ -3,8 +3,7 @@ common coleco, msx and retro computer cp/m software and hardware
 
 ## Colecovision
 
-Colecovision games on a Z180 retro computer:  
-https://github.com/b3rendsh/cvload
+[Colecovision games on a Z180 retro computer](https://github.com/b3rendsh/cvload)
 
 ## MSX
 
@@ -15,9 +14,7 @@ RomWBW for CP/M (and work-alike) operating systems on a MSX computer:
 
 ## Retro computer
 
-MSX 1 system on a rcbus computer:
-
-**work in progress**
+[MSX 1 system on a rcbus computer](https://github.com/b3rendsh/msxbase/tree/main/rcbus)  
 
 ## License
 
