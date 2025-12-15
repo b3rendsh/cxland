@@ -1,0 +1,10 @@
+Id,Designator,Footprint,Quantity,Designation
+1,"D1,D2","D_DO-41_SOD81_P10.16mm_Horizontal",2,1N5817
+2,"U1,U2",DIP-20_TI-N,2,SN74LVC245AN
+3,U3,DIP-14_W7.62mm,1,74HCT32
+4,U4,DIP-16_W7.62mm,1,74HCT138
+5,U6,DIP-48_TangNano9K,1,Tang_Nano_9K
+6,"C1,C2,C3,C4",C_Disc_D3.0mm_W2.0mm_P2.50mm,4,0.1uF
+7,J1,PinHeader_2x40_P2.54mm_Angled,1,Conn_02X40
+8,"JP1,JP2,JP3,JP4",PinHeader_1x03_P2.54mm_Vertical,4,Conn_01x03
+9,J5,PinHeader_2x02_P2.54mm_Vertical,1,Conn_02x02
