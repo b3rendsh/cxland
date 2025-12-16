@@ -28,13 +28,11 @@ Make sure you have the required system roms installed (google systemroms for ope
 1. Select the Philips NMS8255 machine (MSX 2 with international keyboard layout).
 2. Insert openMSX Team Memory Mapper (512KB) extension in cart Slot A.
 3. Insert SOLiD BEER IDE extension in cart Slot B.
-4. For Disk Drive A select the msx_fd_720KB.dsk image.
-5. For Hard Disk A select the msx_combo.dsk image.
-6. Boot the machine.  
+4. For Hard Disk A select the msx_combo.dsk image.
+5. Boot the machine.  
 
-Notes:  
-1: If you use the latest BEER ROM (github msxdos2s) then you can boot from the hard disk and step 4 is not required.  
-2: You can boot more CP/M work-alike systems then are displayed in the boot menu e.g. CP/M 3. See RomWBW user manual.
+Note:  
+You can boot more CP/M work-alike systems then are displayed in the boot menu e.g. CP/M 3. See RomWBW user manual.
 
 ## Custom configuration
 
