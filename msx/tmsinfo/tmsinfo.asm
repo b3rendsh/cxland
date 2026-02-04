@@ -155,7 +155,7 @@ TMS_VRAMSTR:	db	"Unknown$"	; 0
 		db	"4KB$"		; 1
 		db	"16KB$"		; 2
 		db	"32KB$"		; 3
-		db	"64KB$"		; 4
+		db	"16KB-64KB$"	; 4
 		db	"128KB$"	; 5
 		db	"192KB$"	; 6
 		db	"1MB$"		; 7
