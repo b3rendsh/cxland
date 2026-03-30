@@ -2,12 +2,12 @@
 
 ## Introduction
 
-This folder contains compiled binaries of RomWBW for MSX.
+This folder contains compiled binaries of RomWBW v3.6.0 for MSX.
 
 RomWBW will work on MSX by using a standard MSX RAM Mapper as the RomWBW memory manager.  
 The RomWBW HBIOS and other banks are preloaded from a disk image with a MSX-DOS loader application.  
 There is no specific add-on hardware required, just a standard MSX with at least a 512KB RAM mapper.  
-A BEER IDE or SODA IDE cart with a 256MB CF card is recommended as a disk storage option.
+A BEER, MALT or SODA IDE cart with a 256MB CF card is recommended as a disk storage option.
 
 The same license terms apply as for the official distribution of RomWBW. The binaries are shared in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
