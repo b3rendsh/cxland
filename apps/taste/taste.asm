@@ -10,11 +10,6 @@
 ; IDE disk info and test for use with 
 ;     MSX: BEER, SODA or MALT IDE interface
 ;     RomWBW: CF or PPIDE interface
-;
-; todo:
-; - support disk write testsectors > 4GB
-; - add delays if needed
-
 
 ; Build options
 ;DEFINE BASBIN		; build MSX BASIC binary (see Makefile)
@@ -457,7 +452,7 @@ r11:		sla	c			; "sll c" doesn't work on z180!
 
 ; ------------------------------------------------------------------------------
 ; IDE disk write test
-; Destroys last 64KB of a disk (up to 4GB)!
+; Destroys last 64KB of a disk (up to 8GB)!
 ; ------------------------------------------------------------------------------
 writetest:	ld	de,t_write
 		call	PrintText
@@ -466,7 +461,7 @@ writetest:	ld	de,t_write
 		or	c			; disk size > 32MB?
 		jr	z,sec_err
 		ld	a,b
-		or	a			; disk size > 4GB?
+		or	a			; disk size > 8GB?
 		jr	z,writetest1
 		ld	a,$ff
 		ld	(lastsec+0),a		; set #sec bit 0..7
@@ -1093,7 +1088,7 @@ beerNsector:	ld	l,$01			; number of sectors is N
 		ld	l,c			; bit 16..23
 		call	beerSetReg
 		inc	h			; IDE register 6
-		ld	l,$e0			; LBA mode
+		ld	l,$e0			; LBA mode, disk 0
 		call	beerSetReg
 	IFDEF BEER_CS
 		ld	a,BEER_IDLE		; IDE register 7
@@ -1489,7 +1484,7 @@ maltNsector:	ld	l,$01			; number of sectors is N
 		ld	l,c			; bit 16..23
 		call	maltSetReg
 		inc	h			; IDE register 6
-		ld	l,$e0			; LBA mode
+		ld	l,$e0			; LBA mode, disk 0
 		call	maltSetReg
 		pop	bc
 		pop	hl
@@ -1855,7 +1850,7 @@ sodaNsector:	ld	a,$01			; number of sectors is 1
 		inc	c			; IDE register 5
 		out	(c),a			; bit 16..23
 		inc	c			; IDE register 6
-		ld	a,$e0			; LBA mode
+		ld	a,$e0			; LBA mode, disk 0
 		out	(c),a
 		pop	bc
 		pop	hl
