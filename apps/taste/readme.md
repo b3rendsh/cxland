@@ -19,7 +19,7 @@ It is required to have a master disk unit attached to the interface.
         Note: some disk controllers don't support multi sector read.
 
 /W      Include write test.
-        This test destroys the laste 64KB of data on the harddisk!
+        This test destroys the last 64KB of data on the harddisk!
         On large disks the last 64KB up to 8GB is used.
 
 /D      Print debug information.
@@ -30,8 +30,8 @@ Multiple test options can be specified.
 **Interface**
 ```
 /B      BEER IDE (MSX)
-/M      MALT | CF IDE
-/S      SODA | 8255 PPIDE
+/M      MALT | 8255 PPIDE
+/S      SODA | CF IDE
 ```
 
 If no interface is specified then the program will try to autodetect it.
