@@ -50,10 +50,10 @@ If no interface is specified then the program will try to autodetect it.
 | PIO mode        | Maximum supported PIO mode           |
 
 
-**Diagnostic test**
+**Diagnostic test**  
 passed or failed with error code
 
-**Disk read speed**
+**Disk read speed**  
 Sequential disk read tests in KB/s, the 50Hz or 60Hz indicates what timer frequency is detected.
 
 | Field           | Description                          |
@@ -63,7 +63,7 @@ Sequential disk read tests in KB/s, the 50Hz or 60Hz indicates what timer freque
 | block 16k       | Multi sector / block read 32 sectors |
 | 5 sectors       | Multi sector / block read 5 sectors  |
 
-**Disk write test**
+**Disk write test**  
 2 pass write test result
 
 ## Examples
