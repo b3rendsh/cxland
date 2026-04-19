@@ -36,4 +36,16 @@ You can boot more CP/M work-alike systems then are displayed in the boot menu e.
 
 ## Custom configuration
 
-Clone the RomWBW repository and modify the MSX platform configuration files for a custom setup.
+Clone the RomWBW repository and modify the MSX platform configuration files for a custom setup.  
+The configuration is stored in the file:  Source/HBIOS/Config/MSX_std.asm  
+See the RomWBW user manual for further instructions howto rebuild the binaries.
+
+The MALT interface requires following settings:
+```
+PPIDE0MODE	.SET	PPIDEMODE_STD
+PPIDE0BASE	.SET	$34
+```
+The default I/O address for the SODA interface is set to $10 but it can be changed by adding/modifying the line:
+```
+IDE0BASE	.SET	$10
+```
