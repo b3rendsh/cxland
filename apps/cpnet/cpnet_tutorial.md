@@ -27,24 +27,24 @@ We use the cpnet-z80 java-based serial server in this example.
 **Installation**
 1. Download the server files from [cpnet-z80](https://github.com/durgadas311/cpnet-z80)
 2. Optionally download [jSerialComm v2.6.2](https://github.com/Fazecast/jSerialComm/releases/tag/v2.6.2)
-2. Ensure you have CpnetSerialServer.jar and the jSerialComm library in your working folder e.g. ~/Apps/cpnet.
-3. Create a folder structure for your networked drives:
+3. Ensure you have CpnetSerialServer.jar and the jSerialComm library in your working folder e.g. ~/Apps/cpnet.
+4. Create a folder structure for your networked drives:
 ```
 mkdir ~/Apps/cpnet/root    # Root folder
 mkdir ~/Apps/cpnet/root/a  # Maps to network drive A:
 mkdir ~/Apps/cpnet/root/b  # Maps to network drive B:
 ```
-4. Configuration ([cpnetrc.msx](cpnetrc.msx))
-Create a server configuration file and set:  
+5. Configuration: cpnetrc  
+Create a server configuration file  ([cpnetrc.msx](cpnetrc.msx) / [cpnetrc.rcz80](cpnetrc.rcz80)) and set:  
 - Baudrate: 9600 (MSX) or 115200 (SC720 RCBUS).
 - Flow control: rts/cts.
 - Protocol: DRI BINARY CRC
 - Timeouts: set dri_ack_timeout and dri_char_timeout to 100ms–200ms to prevent verify errors.
 - Root directory
 
-5. Create/customize the [serialserver](serialserver) launch script for your environment.
+6. Create/customize the [serialserver](serialserver) launch script for your environment.
 
-Start the server:
+**Start the server**
 ```
 cd ~/Apps/cpnet
 ./serialserver conf=cpnetrc.msx
@@ -67,14 +67,14 @@ A> MODE COM1: 9600     # Set the port speed to match the server
 ## Launching the network
 Once the server is running on the PC, execute the following on the CP/M client.
 
-1. Start the Loader:
-`J> CPNETLDR`
-You should see "CP/NET 1.2 loading complete."
-2. Map drives:
-Map a local drive letter (like K:) to a server drive (like A:):
-`J> NETWORK K:=A:`
-3. Verify:
-`J> DIR K:`
+1. Start the Loader:  
+`J> CPNETLDR`  
+You should see "CP/NET 1.2 loading complete."  
+2. Map drives:  
+Map a local drive letter (like K:) to a server drive (like A:):  
+`J> NETWORK K:=A:`  
+3. Verify:  
+`J> DIR K:` 
 
 ## Troubleshooting
 | Symptom                 | Cause                | Solution                                         |
