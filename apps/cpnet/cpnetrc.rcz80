@@ -1,0 +1,11 @@
+cpnet_debug = 0
+cpnet_tty = /dev/ttyUSB0 115200
+cpnet_flow_control = rts/cts
+cpnet_cid = 01
+cpnet_protocol = DRI BINARY CRC
+cpnet_server00 = HostFileBdos
+hostfilebdos00_root_dir = /home/henk/Apps/cpnet/root
+hostfilebdos00_temp = P
+hostfilebdos00_nosys
+dri_ack_timeout = 100
+dri_char_timeout = 100
