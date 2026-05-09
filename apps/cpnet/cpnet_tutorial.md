@@ -19,6 +19,7 @@ The serial cable should be connected to the second serial port on the Z80 system
 | Hardware         | Recommended baud | ACK Timeout | Port   |
 |:---------------- |-----------------:|------------:|:-------|
 | MSX (16552 cart) | 9600             | 200ms       | Port 2 |
+| MSX 16550 DIRECT | 115200           | 200ms       | Port 2 |
 | SC720 RCBUS      | 115200           | 100ms       | Port B |
 
 ## Server-side setup (Linux/PC)
@@ -83,4 +84,8 @@ Map a local drive letter (like K:) to a server drive (like A:):
 | Disk full / write error | Buffer overrun       | Enable RTS/CTS flow control and lower baud rate. |
 | Verify error (PIP/COPY) | Server latency       | Increase dri_ack_timeout to 100ms / 200ms.       | 
 | Files not visible       | Filename case        | Ensure files on the server are lowercase.        | 
+
+## MSX 16550 DIRECT
+
+Check the [msx-115k readme](msx-115k2/readme.txt) howto increase the speed on MSX to 115200 baud.
 
