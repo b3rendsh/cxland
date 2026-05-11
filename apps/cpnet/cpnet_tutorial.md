@@ -15,11 +15,11 @@ The serial cable should be connected to the second serial port on the Z80 system
 
 The timings are mostly dependent on what client system is used.
 
-| Hardware         | Z80 Mhz | Driver | Recommended baud | ACK Timeout | Port   | Avg. speed |
-|:---------------- |--------:|:-------|-----------------:|------------:|:-------|:-----------|
-| MSX 16552 CART   | 3.58    | HBIOS  | 9600             | 200ms       | Port 2 | 0.5 KB/s   |
-| MSX 16552 CART   | 3.58    | DIRECT | 115200           | 200ms       | Port 2 | 2.4 KB/s   |
-| SC720 RCBUS      | 7.37    | HBIOS  | 115200           | 100ms       | Port B | 1.5 KB/s   |
+| Hardware         | Z80 Clock | Driver | Recommended Baud | ACK Timeout | Port   | Avg. Speed |
+|:---------------- |----------:|:-------|-----------------:|------------:|:-------|:-----------|
+| MSX 16552 CART   | 3.58 MHz  | HBIOS  | 9600             | 200ms       | Port 2 | 0.5 KB/s   |
+| MSX 16552 CART   | 3.58 MHz  | DIRECT | 115200           | 200ms       | Port 2 | 2.4 KB/s   |
+| SC720 RCBUS      | 7.37 MHz  | HBIOS  | 115200           | 100ms       | Port B | 1.5 KB/s   |
 
 ## Server-side setup (Linux/PC)
 We use the cpnet-z80 java-based serial server in this example.
@@ -91,5 +91,5 @@ Map a local drive letter (like K:) to a server drive (like A:):
 
 ## Optimization
 
-On relatively slow Z80 systems the throughput can be improved if the SNIOS driver directly accesses the hardware instead of using HBIOS. For MSX the custom built driver in the [msx-115k2](msx-115k/) folder can be used.
+On relatively slow Z80 systems the throughput can be improved if the SNIOS driver directly accesses the hardware instead of using HBIOS. For MSX the custom built driver in the [msx-115k2](msx-115k2/) folder can be used.
 
