@@ -18,9 +18,12 @@ Copy the snios.spr file to the cp/net drive on your client computer.
 
 Build/customize
 ---------------
-1. Setup the build environment: see cpnet-z80/md/BUILD.md
-2. Copy the sources in this folder to cpnet-z80/src/ser-hbios
-3. Review settings in cpnet-z80/src/ser-hios/config.lib
+1. Clone my fork of the cpnet-z80 repository: 
+   https://github.com/b3rendsh/cpnet-z80
+2. Setup the build environment: 
+   see cpnet-z80/md/BUILD.md
+3. Review settings in:
+   cpnet-z80/src/ser-hios/config.lib
 4. In the cpnet-z80 folder type the command: 
    make NIC=ser-hbios HBA=null
 

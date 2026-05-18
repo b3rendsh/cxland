@@ -91,5 +91,9 @@ Map a local drive letter (like K:) to a server drive (like A:):
 
 ## Optimization
 
-On relatively slow Z80 systems the throughput can be improved if the SNIOS driver directly accesses the hardware instead of using HBIOS. For MSX the custom built driver in the [msx-115k2](msx-115k2/) folder can be used.
+On relatively slow Z80 systems the throughput can be improved if the SNIOS driver directly accesses the hardware instead of using HBIOS.
+
+For MSX the custom built driver in the [msx-115k2](msx-115k2/) folder can be used.
+
+For RomWBW there's an optimized driver in the [ser-hbios](ser-hbios/) folder.
 

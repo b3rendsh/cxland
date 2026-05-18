@@ -1,2 +1,0 @@
-SNDEPS += chrio.rel
-SNLINK = snios,chrio
